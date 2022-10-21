@@ -1,0 +1,20 @@
+site_name: My Docs
+nav:
+    - Home:
+        - dual_boot_ubuntu_with_partial_disk_encryption.md
+        - cryptsetup.md
+        - index.md
+        - debian10.md
+        - mongodb.md
+        - mysql.md   
+        - graphite.md
+        - apache.md
+        - clamav.md
+        - linux_kernel_compilation.md
+        - SSL_certificaten_installeren.md
+        - Python.md
+        - Php.md
+        - Perl.md
+
+    - About: about.md
+theme: readthedocs

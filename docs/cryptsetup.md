@@ -1,0 +1,26 @@
+#disk encryptie met cryptsetup
+
+#luksFormat
+Een disk encrypten kan door luksFormat te gebruiken: 
+
+    luksFormat -t 'filesysteem' /dev/'disknaam'
+
+Waar filesysteem een gangbaar linux filesysteem is zoals ext4 of xfs (standaard vfat). Er wordt dan gevraagd om een passphrase.
+
+#Openen van een encrypted disk:
+
+    cryptsetup open /dev/'disknaam' 'naam van de device mapping'
+
+Waar 'naam van de device mapping' de naam is in /dev/mapping/. Deze naam is te gebruiken om de encrypte disk te mounten.
+
+#USB	
+Dit werkt ook voor usb sticks. 
+Om te vinden welk device in /dev de usb stick is kun je het volgende doen:
+
+    $dmesg | grep sd 
+
+Er verschijnt dat de regel die door de kernel is gerapporteerd:
+
+    [ 1576.923832] sd 5:0:0:0: [sda] Attached SCSI removable disk
+
+Meestal is het /dev/sda maar het kan zijn dat jouw systeem sda al in gebruik heeft dus altijd even controleren of de USB stick sda heet.
