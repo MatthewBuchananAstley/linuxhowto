@@ -67,5 +67,11 @@ Een table veranderen kan met een ALTER instructie.
 
   ALTER TABLE `users` ADD `ipaddress` VARCHAR(65) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER `cookiecode` ;
 
- 
+# MariaDB password veranderen
+
+SET PASSWORD FOR 'user'@'%' = PASSWORD('password') ; 
+
+# Mysql password veranderen
+
+ALTER USER 'user'@'%' IDENTIFIED BY 'password' ;
 

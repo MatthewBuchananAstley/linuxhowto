@@ -12,9 +12,12 @@ nav:
         - clamav.md
         - linux_kernel_compilation.md
         - SSL_certificaten_installeren.md
+        - ssh.md
+        - security.md
         - Python.md
         - Php.md
         - Perl.md
+        - readthedocs.md
 
     - About: about.md
 theme: readthedocs
