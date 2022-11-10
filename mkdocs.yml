@@ -12,6 +12,7 @@ nav:
         - clamav.md
         - linux_kernel_compilation.md
         - SSL_certificaten_installeren.md
+        - git.md
         - ssh.md
         - security.md
         - Python.md
