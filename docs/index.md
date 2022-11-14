@@ -1,6 +1,6 @@
 # Een linuxhowto collectie
 
-Allereerst, ROOT, wat is ROOT? Dat vroeg ik mij vroeger af toen ik naar het installatie programma van FreeBSD keek en er stond "give root directory".
+Allereerst, ROOT, wat is ROOT? Dat vroeg ik mij vroeger af toen ik naar het installatie programma van FreeBSD keek. Er stond "give root directory" of iets dergelijks.
 
 Toen ik vroeg op IRC "hallo wat is root?" Zei men onelegant RTFM! 
 
@@ -10,7 +10,7 @@ Ok dus root kan zijn:
 
 Of:
 
-    root de superuser met alle rechten op het systeem, het "#" tekentje geeft dat in de shell  
+    root de superuser met alle rechten op het systeem, het "#" tekentje geeft dat aan in de shell  
 
 
 Dus RTFM (*waarschuwing onelegante tekst*: read the fucking manual) werd heel makkelijk gezegd toen er nog geen <a href="https://www.contributor-covenant.org/">COCs </a> ( <a href="https://www.contributor-covenant.org/">code of conducts, regels voor het elegant omgaan met elkaar</a>) overal waren op internet. Welke FM lezen dan waarin staat dat er dan "/" als beginmapje op een bestandssysteem moet specificeren (gelukkig kon mijn moeder mij dat vertellen).
