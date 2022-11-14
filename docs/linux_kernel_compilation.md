@@ -1,6 +1,6 @@
 # Linux kernel compilation
 
-Haal de laatste kernel source van https://kernel.org.
+Haal de laatste kernel source van <a href="https://kernel.org">https://kernel.org</a>.
 en pak het uit in een directory.
 
 #
