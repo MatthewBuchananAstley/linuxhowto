@@ -1,9 +1,10 @@
 site_name: My Docs
 nav:
     - Home:
+        - index.md
         - dual_boot_ubuntu_with_partial_disk_encryption.md
         - cryptsetup.md
-        - index.md
+        - debianpackages.md
         - debian10.md
         - mongodb.md
         - mysql.md   
