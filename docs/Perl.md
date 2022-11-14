@@ -18,7 +18,7 @@ Voor uitgebreidere uitleg zie man perlre
 
     perldoc -f split
 
-# css bestanden bekijken waar alle overtollige whitespace is verwijderd.
+# Gecomprimeerde css bestanden bekijken 
 
     cat theme.css | perl -lne '@a = split(/;/,$_); for $i (<@a>) { print $i }  ' | less
  
