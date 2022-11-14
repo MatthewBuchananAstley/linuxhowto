@@ -20,6 +20,8 @@ nav:
         - Php.md
         - Perl.md
         - readthedocs.md
+        - computeruptime.md
+        - coc.md
 
     - About: about.md
 theme: readthedocs
