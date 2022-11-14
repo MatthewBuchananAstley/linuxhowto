@@ -29,6 +29,9 @@ Het mkdocs pakket is een handig pakket om standaard software documentatie mee te
     INFO     -  [11:40:24] Serving on http://127.0.0.1:8000/
     INFO     -  [11:40:26] Browser connected: http://127.0.0.1:8000/
 
+
+De url http://127.0.0.1:8000/ is dan in de browser te openen
+
 # Teksten toevoegen
 
 Teksten gaan in de docs directory, bestanden hebben de .md extensie.
@@ -53,12 +56,9 @@ het volgende stukje css van nowrap naar wrap veranderen:
 
 # Readthedocs.org
 
-Wanneer de mkdocs documentatie in de lokale mkdocs directory geschreven is dan kan dat gepusht worden naar de githubi repository docs directory. 
+Wanneer de mkdocs documentatie in de lokale mkdocs directory geschreven is dan kan dat gepusht worden naar de github repository docs directory. 
 
 Met een gratis readthedocs.org account en nadat er een koppeling is gemaakt tussen readthedocs en github.com is er automatisch een readthedocs documentatie pagina the genereren. Na elke wijziging aan de docs van een in readthedocs.org geconfigureerd project zal er voor dat project automatisch nieuwe documentatie gegenereerd worden.
 
-Er is daarvoor in de docs root directory een .readthedocs.yaml bestand nodig. Afhankelijk van de mkdocs versie en vereisten daarvoor kunnen er in de yaml file en pip3 requirements.txt benodigde software versies gespecificeerd worden.
-
-
-
+Er is daarvoor in de docs root directory van een project een .readthedocs.yaml bestand nodig. Afhankelijk van de mkdocs versie en vereisten daarvoor kunnen er in de yaml file en pip3 requirements.txt benodigde software versies gespecificeerd worden.
 
