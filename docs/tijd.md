@@ -1,5 +1,3 @@
-# Tijd
-
 # Bash
 
     date 
