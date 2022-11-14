@@ -31,47 +31,47 @@ mysqladmin
 met dit script is zijn msql velden te herstellen (in de for loop met het data
 bestand kunnen andere bewerkingen nodig zijn met een bijbehorende SQL query)::
 
-   ---
-   #!/usr/bin/python3
+     ---
+    #!/usr/bin/python3
 
-   import os<br>
-   import sys<br>
-   import mysql.connector
+    import os<br>
+    import sys<br>
+    import mysql.connector
 
-   f = open('bestand_met_te_herstellen_data.txt', 'r', newline='')
+    f = open('bestand_met_te_herstellen_data.txt', 'r', newline='')
 
-   db = mysql.connector.connect(user='gebruikersnaam', password='wachtwoord',host='hostnaam',database='databasenaam')
+    db = mysql.connector.connect(user='gebruikersnaam', password='wachtwoord',host='hostnaam',database='databasenaam')
 
-   cursor = db.cursor()
+    cursor = db.cursor()
  
-   for i in f:<br>
-      update = "update tablenaam set ID = '" + i +"' where ID ='" + str(i) + "'"<br>
-      print(update)<br>
-      cursor.execute(update)<br>
+    for i in f:<br>
+        update = "update tablenaam set ID = '" + i +"' where ID ='" + str(i) + "'"<br>
+        print(update)<br>
+        cursor.execute(update)<br>
         
-   db.commit()
-   cursor.close()
-   db.close()
-   ---
+    db.commit()
+    cursor.close()
+    db.close()
+    ---
    
 # table veranderen
 
 Een table veranderen kan met een ALTER instructie.
 
-  ```  
-  ALTER TABLE `users` CHANGE `cookiecode` `cookiecode` VARCHAR(65) 
-  CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT null;
-  ``` 
+    ```  
+    ALTER TABLE `users` CHANGE `cookiecode` `cookiecode` VARCHAR(65) 
+    CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT null;
+    ``` 
 
 # Een rij toevoegen
 
-  ALTER TABLE `users` ADD `ipaddress` VARCHAR(65) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER `cookiecode` ;
+    ALTER TABLE `users` ADD `ipaddress` VARCHAR(65) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER `cookiecode` ;
 
 # MariaDB password veranderen
 
-SET PASSWORD FOR 'user'@'%' = PASSWORD('password') ; 
+    SET PASSWORD FOR 'user'@'%' = PASSWORD('password') ; 
 
 # Mysql password veranderen
 
-ALTER USER 'user'@'%' IDENTIFIED BY 'password' ;
+    ALTER USER 'user'@'%' IDENTIFIED BY 'password' ;
 

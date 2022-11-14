@@ -11,8 +11,8 @@ Bekijk de netwerkkaarten in het systeem met:
 
 Netwerk interfaces configureren gaat via een interfaces file /etc/network/interfaces
 
-> auto "interface naam"  
-> iface "interface naam" inet dhcp 
+    > auto "interface naam"  
+    > iface "interface naam" inet dhcp 
 
 Een ip is te verkrijgen door de interface te activeren met ifup:
     

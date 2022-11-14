@@ -50,3 +50,15 @@ het volgende stukje css van nowrap naar wrap veranderen:
 
     code,.rst-content tt,.rst-content code{white-space:wrap
 
+
+# Readthedocs.org
+
+Wanneer de mkdocs documentatie in de lokale mkdocs directory geschreven is dan kan dat gepusht worden naar de githubi repository docs directory. 
+
+Met een gratis readthedocs.org account en nadat er een koppeling is gemaakt tussen readthedocs en github.com is er automatisch een readthedocs documentatie pagina the genereren. Na elke wijziging aan de docs van een in readthedocs.org geconfigureerd project zal er voor dat project automatisch nieuwe documentatie gegenereerd worden.
+
+Er is daarvoor in de docs root directory een .readthedocs.yaml bestand nodig. Afhankelijk van de mkdocs versie en vereisten daarvoor kunnen er in de yaml file en pip3 requirements.txt benodigde software versies gespecificeerd worden.
+
+
+
+

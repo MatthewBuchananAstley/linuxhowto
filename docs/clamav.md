@@ -4,19 +4,19 @@ Partities op een harde schijf zijn te scannen op virussen met behulp van het ope
 
 ## Installeren
 
-$sudo apt install clamav
+    $sudo apt install clamav
 
 Er worden dan een aantal pakketen geinstalleerd inclusief een cronjob waarmee continu nieuwe virus definities gedownload worden.
 
 # Freshclam virusdefinitie database updaten
 
-yum install freshclam
-chown root:clamav /etc/freshclam.conf
-chmod 640 /etc/freshclam.conf
+    yum install freshclam
+    chown root:clamav /etc/freshclam.conf
+    chmod 640 /etc/freshclam.conf
 
 Het freshclam log activeren in /etc/freshclam.log (uncommenten: "#" weghalen) en daarna 
 
-chown clamupdate:clamupdate /var/log/freshclam.log 
+    chown clamupdate:clamupdate /var/log/freshclam.log 
 
 # Freshclam update cronjob starten 
 
@@ -25,6 +25,6 @@ chown clamupdate:clamupdate /var/log/freshclam.log
 
 # Partitie scannen
 
-mkdir tmp/
-mount "/dev/partitie" tmp/
-clamscan -r -v /tmp 
+    mkdir tmp/
+    mount "/dev/partitie" tmp/
+    clamscan -r -v /tmp 

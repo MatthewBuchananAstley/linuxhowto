@@ -15,10 +15,11 @@ Een repository creeren voor code.
 De ssh key pub id invoeren bij de settings.
 De nieuwe repository clonen naar je werkstation.
 De programma code kopieren naar de geclonede repository directory.
-Git add "programma"
-Git commit "programma"
-Git remote add origin git@github.com:USERNAME/repository.git
-Git push
+
+    Git add "programma"
+    Git commit "programma"
+    Git remote add origin git@github.com:USERNAME/repository.git
+    Git push
 
 # Git repository op een usb updaten vanaf een repository op de lokale machine
 

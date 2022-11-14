@@ -2,13 +2,11 @@
 
 ## Request-URI limiet
 
-Deze instelling is te gebruiken zodra veel tekst posten via een html cgi-bin POST tegen het limiet aanloopt van:
+Deze instelling is te gebruiken zodra veel tekst posten via een html cgi-bin POST tegen het limiet aanloopt van 8190, wat de standaard waarde is:
 
-standaard waarde: 8190 
+De volgende regel toevoegen in /etc/apache2/sites-enabled/000-default als dat je apache2 configuratie bestand is: 
 
-Deze regel toevoegen in /etc/apache2/sites-enabled/000-default als dat je apache2 configuratie bestand is: 
-
-LimitRequestLine 16380 
+    LimitRequestLine 16380 
 
 # extra cgi-bin activeren
 

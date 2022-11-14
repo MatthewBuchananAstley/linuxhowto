@@ -1,8 +1,8 @@
 #SSH keys aanmaken
 
-ssh-keygen
+    ssh-keygen
 
 #SSH keys passphrase veranderen
 
-ssh-keygen -f "private key" -N "oude passphrase" -P "nieuwe passphrase"
+    ssh-keygen -f "private key" -N "oude passphrase" -P "nieuwe passphrase"
 
