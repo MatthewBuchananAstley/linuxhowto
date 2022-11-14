@@ -1,5 +1,9 @@
 # Php 
 
+# Documentatie
+
+<a href="https://www.php.net/docs.php">https://www.php.net/docs.php</a>
+
 # Hashed passwords genereren
 
     <?php
