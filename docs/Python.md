@@ -1,7 +1,15 @@
 # Python
 
+## Documentatie
+
+<a href="https://docs.python.org/3/">https://docs.python.org/3/</a>
+
+
 ## Unieke willekeurige code genereren
 
+Waarom is dat handig? Wanneer bestanden wat moeilijker te raden moeten zijn op publiek bereikbare webhost ruimte. Dan genereer je zo'n code en zet je dat voor de bestandsnaam.
+
+    "code"_handigscriptje.php 
 
 Dat kan met <a href="https://github.com/MatthewBuchananAstley/vop">vop</a> (Voice of pinoccio or pinocchia password generator)
 
