@@ -6,7 +6,7 @@ Security pakketten die je kunt installeren zijn
 
     rkhunter/chkrootkit - scripts waarmee rootkits te detecteren zijn
 
-    nmap_local - script waarmee de eigen netwerk interfaces op open poorten te controleren zijn
+    <a href="https://github.com/MatthewBuchananAstley/nmap_local">nmap_local</a> - script waarmee de eigen netwerk interfaces op open poorten te controleren zijn
 
 
 # Supersterke wachtwoorden genereren
@@ -16,7 +16,17 @@ Dat kan met <a href="https://github.com/MatthewBuchananAstley/vop">Voice of pino
     [matthewbuchananastley@fedora vop]$ ./otp_m.py -pwl 64 
     j8A#Ks7e5Kl075JB0zED408FK0eXD129kA23Mfa2njE38613Aa9Fda60822Ef6L
 
-    Het heeft minimaal één hoofdletter, minimaal één kleine letter en precies één speciaal karakter
+Het heeft minimaal één hoofdletter, minimaal één kleine letter en precies één speciaal karakter
+
+Een wachtwoord in:
+
+    echo "64^77" | bc -l
+    11908525658859223294760121268437066290850060053501019099651935423375\
+    59409644991157577631417489430225814753315399706505926303091308322252\
+    3904
+
+mogelijkheden is vervolgens het resultaat.
+
 
 # Forensische applicaties voor ubuntu (forensics-all)
 
