@@ -8,7 +8,7 @@ De stappen in het kort:
 
 * Zet een ubuntu versie op een usbstick
 * Boot de usb en kies try ubuntu before installing
-* Start gparted en maak genoeg ruimte vrij door de grootste partitie te vekleinen
+* Start gparted en maak genoeg ruimte vrij door de grootste partitie te verkleinen
 * Start het installatie programma en kies de optie om handmatig de partities te configureren
 * maak een EFI (128MB), /boot (1G), en / (gewenste grootte) encrypted root partitie.
 * Installeer ubuntu
