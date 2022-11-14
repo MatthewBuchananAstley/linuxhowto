@@ -13,7 +13,7 @@ Of:
     root de superuser met alle rechten op het systeem, het "#" tekentje geeft dat in de shell  
 
 
-Dus RTFM (*waarschuwing onelegante tekst*: read the fucking manual) werd heel makkelijk gezegd toen er nog geen <a href="https://opensourceconduct.com/">COCs</a> ( <a href="https://opensourceconduct.com/">code of conducts, regels voor het elegant omgaan met elkaar</a>) overal waren op internet. Welke FM lezen dan waarin staat dat er dan "/" als beginmapje op een bestandssysteem moet specificeren (gelukkig kom mijn moeder dat mij vertellen).
+Dus RTFM (*waarschuwing onelegante tekst*: read the fucking manual) werd heel makkelijk gezegd toen er nog geen COCs ( code of conducts, regels voor het elegant omgaan met elkaar) overal waren op internet. Welke FM lezen dan waarin staat dat er dan "/" als beginmapje op een bestandssysteem moet specificeren (gelukkig kom mijn moeder dat mij vertellen).
 
 Er komt op een gegeven moment een tijd dat techneuten moeten documenteren dus bij deze mijn versie van de handige technische documentatie voor LINUX!
 
