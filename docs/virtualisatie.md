@@ -1,6 +1,6 @@
 # KVM virtualisation
 
-Virtualisatie gebeurt op Fedore met behulp van de volgende pakketten:
+Virtualisatie gebeurt op Fedora met behulp van de volgende pakketten:
 
     [root@fedora vop]# yum install libvirt-daemon-kvm qemu-kvm qemu-kvm-core
 
@@ -12,4 +12,25 @@ En in het software installatie programma ziet dat er zo uit:
 
 ![Screenshot](img/Virtmanager_installatie.png)
 
+# Een nieuwe virtuele machine configureren
+
+![Screenshot](img/Create_a_new_virtual_machine.png)
+
+Selecteer de iso van de te installeren linux distributie. 
+
+![Screenshot](img/Canvm_step1.png)
+
+![Screenshot](img/Canvm_step2.png)
+
+Selecteer het aantal processor cores en de hoeveelheid geheugen:
+
+![Screenshot](img/Canvm_step3.png)
+
+Selecteer de hoeveelheid schrijfruimte:
+
+![Screenshot](img/Canvm_step4.png)
+
+Geef een naam op van de virtuele machine:
+
+![Screenshot](img/Canvm_step5.png)
 
