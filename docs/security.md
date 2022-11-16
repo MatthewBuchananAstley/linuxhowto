@@ -2,11 +2,11 @@
 
 Security pakketten die je kunt installeren zijn
 
-    Clamav - virusscanner 
+Clamav - virusscanner 
 
-    rkhunter/chkrootkit - scripts waarmee rootkits te detecteren zijn
+rkhunter/chkrootkit - scripts waarmee rootkits te detecteren zijn
 
-    <a href="https://github.com/MatthewBuchananAstley/nmap_local">nmap_local</a> - script waarmee de eigen netwerk interfaces op open poorten te controleren zijn
+<a href="https://github.com/MatthewBuchananAstley/nmap_local">nmap_local</a> - script waarmee de eigen netwerk interfaces op open poorten te controleren zijn
 
 
 # Supersterke wachtwoorden genereren
