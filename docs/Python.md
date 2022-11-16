@@ -4,6 +4,10 @@
 
 <a href="https://docs.python.org/3/">https://docs.python.org/3/</a>
 
+## Python modules installeren (pip3)
+
+    (apt/yum install (python-)pip3)
+    pip3 install "module"
 
 ## Unieke willekeurige code genereren
 
