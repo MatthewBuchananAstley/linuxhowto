@@ -3,6 +3,7 @@ nav:
     - Home:
         - index.md
         - dual_boot_ubuntu_with_partial_disk_encryption.md
+        - commandline.md
         - cryptsetup.md
         - debianpackages.md
         - debian10.md
