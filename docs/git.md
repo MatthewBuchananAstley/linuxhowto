@@ -29,3 +29,16 @@ De programma code kopieren naar de geclonede repository directory.
 # Git pushen
 
     git push origin HEAD:master
+
+Het git push commando is ook aan te roepen via een alias. Een commando alias is te configureren door:
+
+    alias gp='git push origin HEAD:master' 
+
+toe te voegen aan .bashrc in de home directory. 
+
+
+
+
+    
+
+
