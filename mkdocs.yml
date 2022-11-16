@@ -17,6 +17,7 @@ nav:
         - git.md
         - ssh.md
         - security.md
+        - spdx.md
         - tijd.md
         - Python.md
         - Php.md
