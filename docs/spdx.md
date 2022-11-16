@@ -1,5 +1,7 @@
 # SPDX 
 
+SPDX kan gebruikt worden voor een beter overzicht van de veiligheid van de leveranciersketen.
+
 ## SPDX informatie bestanden generereren
 
 Voor het laten gebruiken van simpele scripts door organisaties die spdx bestanden vereisen is het handig wanneer de volgende informatie wordt opgeslagen in het spdx formaat:
