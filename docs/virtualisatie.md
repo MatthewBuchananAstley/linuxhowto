@@ -6,3 +6,4 @@ Virtualisatie gebeurt op Fedore met behulp van de volgende paketten:
 
 Virt-manager wordt gebruikt om de virtuele systemen te installeren en beheren. Het is te installeren via het grafische software installatie programma.
 
+![Screenshot](img/Virtmanager_installatie.png)
