@@ -25,3 +25,7 @@ De programma code kopieren naar de geclonede repository directory.
 
     cd "repository op usb"
     git pull file::///path/to/repository
+
+# Git pushen
+
+    git push origin HEAD:master
