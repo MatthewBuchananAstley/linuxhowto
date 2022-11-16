@@ -6,7 +6,7 @@ Het mkdocs pakket is een handig pakket om standaard software documentatie mee te
 
 # Mkdocs installeren
     
-    (apt/yum install pip3)
+    (apt/yum install (python-)pip3)
     pip3 install mkdocs
 
 # Mkdocs nieuw project maken
