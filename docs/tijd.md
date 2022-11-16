@@ -1,4 +1,7 @@
-## Tijd
+# Tijd
+
+Hoe programmatisch om te gaan met tijd in Linux.
+
 
 # Bash
 
