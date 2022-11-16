@@ -1,6 +1,6 @@
 # Commandline 
 
-# The scary and magical Linux *thunder* ... commandline 
+# The scary and magical Linux \*thunder\* ... commandline 
 
 So after opening the "terminal"... now what?
 
