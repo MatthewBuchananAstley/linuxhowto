@@ -1,4 +1,6 @@
-# SPDX informatie bestanden generereren
+# SPDX 
+
+## SPDX informatie bestanden generereren
 
 Voor het laten gebruiken van simpele scripts door organisaties die spdx bestanden vereisen is het handig wanneer de volgende informatie wordt opgeslagen in het spdx formaat:
 
