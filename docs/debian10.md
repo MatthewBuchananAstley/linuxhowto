@@ -1,8 +1,5 @@
 # Debian 10
 
-# Root wachtwoord resetten
-
-
 # Netwerk configureren
 
 Bekijk de netwerkkaarten in het systeem met:
