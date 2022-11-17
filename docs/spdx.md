@@ -11,3 +11,14 @@ De Licentie, de copyright vermelding, de SHA1 en SHA256 sums, en ook de sum van 
 Het <a href="https://github.com/MatthewBuchananAstley/spdxISO_IEC5962/">spdx-t.py</a> script kan daarvoor gebruikt worden.
 
     ./spdx-t.py "directory" "https://github.com/NAME/repository.git" "application spdx file" 
+
+
+## Verifiëren van spdx bestanden 
+
+Het verifiëren van de gegenereerde spdx bestanden kan op de volgende site:
+
+<a href="https://tools.spdx.org/app/validate/">https://tools.spdx.org/app/validate/</a> 
+
+## Verdere SPDX informatie
+
+<a href="https://spdx.dev/">https://spdx.dev/</a>
