@@ -23,4 +23,9 @@ Dit ifdef blok kopieren en de cgi-bin naam veranderen.
 		</Directory>
 	</IfDefine>
 
+# Apache html bestanden php code laten uitvoeren
+
+Dat kan door het volgende toe te voegen aan /etc/apache2/mods-enabled/mime.conf in het < IfModule mod_mime_c> </IfModule> blok:
+ 
+    AddType application/x-httpd-php .html .htm
 
