@@ -1,4 +1,4 @@
-# KVM virtualisation
+# KVM virtualisatie
 
 Virtualisatie gebeurt op Fedora met behulp van de volgende pakketten:
 
