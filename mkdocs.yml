@@ -5,6 +5,7 @@ nav:
         - dual_boot_ubuntu_with_partial_disk_encryption.md
         - commandline.md
         - cryptsetup.md
+        - Centos.md
         - debianpackages.md
         - debian10.md
         - mongodb.md
