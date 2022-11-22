@@ -6,6 +6,7 @@ nav:
         - commandline.md
         - cryptsetup.md
         - Centos.md
+        - docker.md
         - debianpackages.md
         - debian10.md
         - mongodb.md
