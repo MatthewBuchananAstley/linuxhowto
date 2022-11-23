@@ -14,12 +14,14 @@ IT automation tool
 Daarvoor moet de directory /etc/ansible aangemaakt worden en ip adressen van (virtuele) machines toegevoegd worden aan een bestand "hosts". Bijvoorbeeld:
 
     [virtuelemachines]
-    192.168.122.100
-    192.168.122.101
+    192.168.122.194
 
 # Bekijk de machines in de inventory
 
     ansible all --list-hosts
+    hosts (1):
+    192.168.122.194
+
 
 # Ansible ssh 
 
