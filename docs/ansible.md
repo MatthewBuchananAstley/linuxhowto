@@ -58,5 +58,50 @@ De key naar de virtuele machine kopieren:
     "ping": "pong"
     }
 
+# Inventory aanmaken 
+
+Een inventroy.yaml bestand aanmaken met daarin:
+
+    virtuelemachines:
+      hosts:
+        centos01:
+          ansible_host: 192.168.122.194
+
+Het verifiëren van dat bestand kan met ansible-inventory:
+
+    ansible-inventory -i inventory.yaml --list   
+    {
+        "_meta": {
+            "hostvars": {
+                "centos01": {
+                    "ansible_host": "192.168.122.194"
+                }
+            }
+    },
+    "all": {
+        "children": [
+            "ungrouped",
+            "virtuelemachines"
+        ]
+    },
+    "virtuelemachines": {
+        "hosts": [
+            "centos01"
+            ]
+        }
+    }
+
+De management nodes pingen op groepnaam kan met behulp van het ansible commando:
+
+    ansible -u ansible --private-key ~/.ssh/ansible_ssh_key virtuelemachines -m ping -i inventory.yaml 
+    centos01 | SUCCESS => {
+        "ansible_facts": {
+            "discovered_interpreter_python": "/usr/bin/python"
+        },
+        "changed": false,
+        "ping": "pong"
+    }
+   
+
 
 
