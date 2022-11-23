@@ -124,3 +124,6 @@ Met behulp van ansible variabelen kunnen commando regel argumenten gespecificiee
 
 <a href="https://docs.ansible.com/ansible/latest/inventory_guide/intro_inventory.html#variables-in-inventory">Ansible variabelen</a>
 
+# Docker containers beheren met ansible
+
+<a href="https://docs.ansible.com/ansible/latest/collections/community/docker/docsite/scenario_guide.html#ansible-collections-community-docker-docsite-scenario-guide"> Ansible docker scenario</a>
