@@ -47,7 +47,7 @@ De key naar de virtuele machine kopieren:
     /usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
  
 
-# Pingeling de hosts onder management via ansible user 
+# Ping de hosts onder management via ansible user 
 
     ansible all -u ansible --private-key ~/.ssh/ansible_ssh_key -m ping 
     192.168.122.194 | SUCCESS => {
