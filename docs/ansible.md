@@ -8,7 +8,6 @@ IT automation tool
 
     pip3 install --user ansible
 
-
 # Creëer inventory 
 
 Daarvoor moet de directory /etc/ansible aangemaakt worden en ip adressen van (virtuele) machines toegevoegd worden aan een bestand "hosts". Bijvoorbeeld:
@@ -60,7 +59,7 @@ De key naar de virtuele machine kopieren:
 
 # Inventory aanmaken 
 
-Een inventroy.yaml bestand aanmaken met daarin:
+Een inventory.yaml bestand aanmaken met daarin:
 
     virtuelemachines:
       hosts:
@@ -102,6 +101,26 @@ De management nodes pingen op groepnaam kan met behulp van het ansible commando:
         "ping": "pong"
     }
    
+# Ansible variabelen
+
+Met behulp van ansible variabelen kunnen commando regel argumenten gespecificieerd worden in het inventory bestand, bijvoorbeeld de usernaam en private key per host of hostgroep:  
+
+    virtuelemachines:
+      hosts:
+        centos01:
+          ansible_host: 192.168.122.194
+          ansible_user: ansible
+          ansible_private_key_file: /home/usernaam/.ssh/ansible_ssh_key
 
 
+    ansible virtuelemachines -m ping -i inventory.yaml 
+    centos01 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+        },
+        "changed": false,
+        "ping": "pong"
+    }
+
+<a href="https://docs.ansible.com/ansible/latest/inventory_guide/intro_inventory.html#variables-in-inventory">Ansible variabelen</a>
 
