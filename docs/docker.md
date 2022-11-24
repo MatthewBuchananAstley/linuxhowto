@@ -58,3 +58,16 @@ Docker images verwijderen:
     Deleted: sha256:df88f60a41218c189d14c76eec8d39383a233ef8f8314eddc1af108deb8b322d
     Deleted: sha256:fe568c5973e730c689dc98f05c886d00d2eb759fba1194e6b405f02ca815c7f2
 
+# Docker images pushen naar docker hub registry
+
+Met een gratis account bij docker hub (docker.io) kun je één registry creëeren, waarna er in te loggen is:
+
+    docker login -u "gebruikersnaam" (het is hoofdlettergevoelig)
+
+Een image op de lokale machine moet eerst een tag hebben voordat het gepusht kan worden:
+
+    docker tag getting-started GEBRUIKERSNAAM/getting-started
+
+Het pushen:
+
+    docker push GEBRUIKERSNAAM/getting-started
