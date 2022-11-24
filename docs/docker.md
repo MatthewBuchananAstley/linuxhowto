@@ -71,3 +71,10 @@ Een image op de lokale machine moet eerst een tag hebben voordat het gepusht kan
 Het pushen:
 
     docker push GEBRUIKERSNAAM/getting-started
+
+Nadat een image gepushed is naar de docker hub registry kan het image gestart worden op een ander docker systeem (zoals lab.play-with-docker.com om te testen).
+Zo'n image gestart op een ander systeem wordt "instance" genoemd.
+
+
+
+
