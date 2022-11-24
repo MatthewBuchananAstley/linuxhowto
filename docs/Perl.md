@@ -22,4 +22,7 @@ Voor uitgebreidere uitleg zie man perlre
 
     cat theme.css | perl -lne '@a = split(/;/,$_); for $i (<@a>) { print $i }  ' | less
  
+# Diskspace bekijken met du -h
+
+    du -h | perl -lne 'print $1,$2,$3 if /^(\d{1,3}G)(.*?)$/ || /^(\d{3}M)(.*?)/'
 
