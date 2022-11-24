@@ -75,6 +75,73 @@ Het pushen:
 Nadat een image gepushed is naar de docker hub registry kan het image gestart worden op een ander docker systeem (zoals lab.play-with-docker.com om te testen).
 Zo'n image gestart op een ander systeem wordt "instance" genoemd.
 
+# Aanhoudende data opslag
 
+Containers zijn te starten op de volgende manier:
+
+    docker run -d ubuntu bash -c "shuff -i 1-10000 -n 1 -o /data.txt && tail -f /dev/null"
+
+Dat tail commando houdt de instance actief. Docker exec kan gebruikt worden. Voor het uitvoeren van commando's op een container:
+
+    docker exec "container-id" cat /data.txt 
+
+Opstarten van een nieuwe container met hetzelfde image:
+
+    docker run -it ubuntu ls
+
+Een storage volume maken:
+
+    docker volume create todo-db
+
+Voor het koppelen van het volume aan de container:
+
+    docker run -dp 3000:3000 -v todo-db:/etc/todos getting-started
+
+# Named volumes and bind mounts
+
+<a href="https://docs.docker.com/get-started/06_bind_mounts/">https://docs.docker.com/get-started/06_bind_mounts/</a>
+
+De twee voornaamste soorten volumes understeund door een standaard docker installatie zijn named volumes en bind mounts. Voor het gebruiken van andere soorten volumes zijn er zogenaamde "volume driver plugins". 
+
+Docker volumes bekijken:
+
+    docker volume ls
+    docker volume inspect todo-db 
+
+# Dev container starten voor een dev workflow
+
+Het volgende docker commando zou een 12-alpine image moeten starten en yarn installeren en uitvoeren: 
+
+    $docker run -dp 3000:3000 \
+        -w /app -v "$(pwd):/app" \
+        node:12-alpine \
+        sh -c "yarn install && yarn run dev"
+    000b2fcc81e338467a8b6f528378543240f351d9e8f1de423dc84041a7476a2b
+
+Wanneer er een four optreedt dan wordt de container weer afgetuigd na het optuigen en print code, de container id. Met die code is het probleem met de container in het systeemlog te vinden.
+Grep met tien regels erna en tien regels ervoor:
+
+    #journalctl -xe | grep -A10 -B10 000b2fcc81e338467a8b6f528378543240f351d9e8f1de423dc84041a7476a2b
+
+    Nov 24 11:30:16 localhost.localdomain oci-umount[7004]: umounthook <debug>: prestart container_id:000b2fcc81e3 rootfs:/var/lib/docker-latest/overlay2/b007653a87b21349733d56fbd14ad8f84f42d159365fccbf0152ad1d1f1f7036/merged
+    Nov 24 11:30:16 localhost.localdomain dockerd-latest[1960]: yarn install v1.22.18
+    Nov 24 11:30:16 localhost.localdomain dockerd-latest[1960]: Error: EACCES: permission denied, open '/app/package.json'
+    Nov 24 11:30:16 localhost.localdomain dockerd-latest[1960]:     at Object.openSync (fs.js:462:3)
+    Nov 24 11:30:16 localhost.localdomain dockerd-latest[1960]:     at Object.readFileSync (fs.js:364:35)
+    Nov 24 11:30:16 localhost.localdomain dockerd-latest[1960]:     at onUnexpectedError (/opt/yarn-v1.22.18/lib/cli.js:88608:106)
+    Nov 24 11:30:16 localhost.localdomain dockerd-latest[1960]:     at /opt/yarn-v1.22.18/lib/cli.js:88727:9
+    Nov 24 11:30:16 localhost.localdomain oci-systemd-hook[7047]: systemdhook <debug>: 000b2fcc81e3: Skipping as container command is docker-entrypoint.sh, not init or systemd
+    Nov 24 11:30:16 localhost.localdomain oci-umount[7048]: umounthook <debug>: 000b2fcc81e3: only runs in prestart stage, ignoring
+    Nov 24 11:30:16 localhost.localdomain dockerd-latest[1960]: time="2022-11-24T11:30:16.425804559-05:00" level=error msg="containerd: deleting container" error="exit status 1: \"container 000b2fcc81e338467a8b6f528378543240f351d9e8f1de423dc84041a7476a2b does not exist\\none or more of the container deletions failed\\n\""
+    Nov 24 11:30:16 localhost.localdomain kernel: docker0: port 1(veth664b57a) entered disabled state
+    Nov 24 11:30:16 localhost.localdomain NetworkManager[968]: <info>  [1669307416.4736] manager: (vethe5c1915): new Veth device (/org/freedesktop/NetworkManager/Devices/111)
+    Nov 24 11:30:16 localhost.localdomain kernel: docker0: port 1(veth664b57a) entered disabled state
+    Nov 24 11:30:16 localhost.localdomain kernel: device veth664b57a left promiscuous mode
+    Nov 24 11:30:16 localhost.localdomain kernel: docker0: port 1(veth664b57a) entered disabled state
+    Nov 24 11:30:16 localhost.localdomain NetworkManager[968]: <info>  [1669307416.4890] device (veth664b57a): released from master device docker0
+    Nov 24 11:30:16 localhost.localdomain dockerd-latest[1960]: time="2022-11-24T11:30:16.520972403-05:00" level=warning msg="000b2fcc81e338467a8b6f528378543240f351d9e8f1de423dc84041a7476a2b cleanup: failed to unmount secrets: invalid argument"
+
+Een rechten probleem.
+    
 
 
