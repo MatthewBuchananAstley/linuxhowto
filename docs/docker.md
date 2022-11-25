@@ -143,7 +143,7 @@ Grep met tien regels erna en tien regels ervoor:
 
 Een rechten probleem.
 
-Het log continue bekijken kan met:
+Het log continu bekijken kan met:
 
     journalctl -f
 
