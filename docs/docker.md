@@ -147,7 +147,7 @@ Het log continu bekijken kan met:
 
     journalctl -f
 
-Na wat andere commando's uit te voeren om te zien wat dat rechtenprobleem is (ls ../ ; ls ../app)  blijkt dat er op CentOS een SElinux optie :z of :Z meegegeven moet worden met het bindmount commando:
+Na wat andere commando's uit te voeren om te zien wat dat rechtenprobleem is (ls ../ ; ls ../app)  blijkt dat er op CentOS een SELinux optie :z of :Z meegegeven moet worden met het bindmount commando:
     
     docker run -dp 3000:3000 -w /app -v "$(pwd):/app:z" node:12-alpine sh -c "yarn install && yarn run dev" 
 
