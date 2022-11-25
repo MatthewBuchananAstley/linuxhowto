@@ -118,7 +118,7 @@ Het volgende docker commando zou een 12-alpine image moeten starten en yarn inst
         sh -c "yarn install && yarn run dev"
     000b2fcc81e338467a8b6f528378543240f351d9e8f1de423dc84041a7476a2b
 
-Wanneer er een four optreedt dan wordt de container weer afgetuigd na het optuigen en print code, de container id. Met die code is het probleem met de container in het systeemlog te vinden.
+Wanneer er een probleem optreedt dan wordt de container na het optuigen weer afgetuigd en print een code, de container id. Met die code is het probleem met de container in het systeemlog te vinden.
 Grep met tien regels erna en tien regels ervoor:
 
     #journalctl -xe | grep -A10 -B10 000b2fcc81e338467a8b6f528378543240f351d9e8f1de423dc84041a7476a2b
@@ -151,19 +151,7 @@ Na wat andere commando's uit te voeren om te zien wat dat rechtenprobleem is (ls
     
     docker run -dp 3000:3000 -w /app -v "$(pwd):/app:z" node:12-alpine sh -c "yarn install && yarn run dev" 
 
-Dat staat in de docker-run manpage:
+Dat staat uitgelegd rond regel 649 in de docker-run manpage.
 
     man docker-run | cat -n | grep -A5 -B5 ":z"
-
-```
-644	
-645	       Labeling systems like SELinux require that proper labels are placed on volume content mounted into a container. Without a label, the  security  system  might
-646	       prevent the processes running inside the container from using the content. By default, Docker does not change the labels set by the OS.
-647	
-648	
-649	       To  change  a  label  in  the  container context, you can add either of two suffixes :z or :Z to the volume mount. These suffixes tell Docker to relabel file
-650	       objects on the shared volumes. The z option tells Docker that two containers share the volume content. As a result, Docker labels the content with  a  shared
-651	       content  label.  Shared  volume  labels  allow  all containers to read/write content.  The Z option tells Docker to label the content with a private unshared
-652	       label.  Only the current container can use a private volume.
-```
 
