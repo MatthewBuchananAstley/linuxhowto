@@ -154,16 +154,15 @@ Na wat andere commando's uit te voeren om te zien wat dat rechtenprobleem is (ls
 Dat staat in de docker-run manpage:
 
     man docker-run | cat -n | grep -A5 -B5 ":z"
-    644	
-    645	       Labeling systems like SELinux require that proper labels are placed on volume content mounted into a container. Without a label, the  security  system  might
-    646	       prevent the processes running inside the container from using the content. By default, Docker does not change the labels set by the OS.
-    647	
-    648	
-    649	       To  change  a  label  in  the  container context, you can add either of two suffixes :z or :Z to the volume mount. These suffixes tell Docker to relabel file
-    650	       objects on the shared volumes. The z option tells Docker that two containers share the volume content. As a result, Docker labels the content with  a  shared
-    651	       content  label.  Shared  volume  labels  allow  all containers to read/write content.  The Z option tells Docker to label the content with a private unshared
-    652	       label.  Only the current container can use a private volume.
 
-
+644	
+645	       Labeling systems like SELinux require that proper labels are placed on volume content mounted into a container. Without a label, the  security  system  might
+646	       prevent the processes running inside the container from using the content. By default, Docker does not change the labels set by the OS.
+647	
+648	
+649	       To  change  a  label  in  the  container context, you can add either of two suffixes :z or :Z to the volume mount. These suffixes tell Docker to relabel file
+650	       objects on the shared volumes. The z option tells Docker that two containers share the volume content. As a result, Docker labels the content with  a  shared
+651	       content  label.  Shared  volume  labels  allow  all containers to read/write content.  The Z option tells Docker to label the content with a private unshared
+652	       label.  Only the current container can use a private volume.
 
 
