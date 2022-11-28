@@ -8,6 +8,7 @@ nav:
         - centos.md
         - docker.md
         - ansible.md
+        - packagemanagement.md
         - debianpackages.md
         - debian10.md
         - mongodb.md
@@ -25,6 +26,7 @@ nav:
         - Python.md
         - Php.md
         - Perl.md
+        - nodejs.md
         - readthedocs.md
         - virtualisatie.md
         - virtualbox.md
