@@ -3,7 +3,7 @@
 
 # Snyk code security analyse
 
-Snyk.io kan github repositories automatisch scannen op kwetsbaarheden in de code. Met het gratis account zijn er honderden scans per maand beschikbaar.
+<a href="https://snyk.io/">Snyk.io</a> kan github repositories automatisch scannen op kwetsbaarheden in de code. Met het gratis account zijn er honderden scans per maand beschikbaar.
 
 
 # Security pakketten
