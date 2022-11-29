@@ -75,3 +75,7 @@ Een table veranderen kan met een ALTER instructie.
 
     ALTER USER 'user'@'%' IDENTIFIED BY 'password' ;
 
+# Docker mysql
+
+<a href="https://hub.docker.com/_/mariadb/">https://hub.docker.com/_/mariadb/</a> is te gebruiken als sql image.
+
