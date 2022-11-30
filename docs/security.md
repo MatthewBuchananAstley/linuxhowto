@@ -8,6 +8,11 @@ nog wat guides:
 
 <a href="https://openssf.org/resources/guides/">https://openssf.org/resources/guides/</a>
 
+Guide for implementing a coordinated vulnerability disclosure process for open source projects
+
+<a href="https://github.com/ossf/oss-vulnerability-guide/blob/main/maintainer-guide.md>https://github.com/ossf/oss-vulnerability-guide/blob/main/maintainer-guide.md</a>
+
+
 
 # Snyk code security analyse
 
