@@ -157,6 +157,10 @@ Dat staat uitgelegd rond regel 649 in de docker-run manpage.
 
 # Docker compose installeren op CentOS
 
+Daarvoor moet de docker.io rpm registry toegevoegd worden aan het systeem. 
 
+<a href="https://docs.docker.com/engine/install/centos/#set-up-the-repository">https://docs.docker.com/engine/install/centos/#set-up-the-repository</a>
+
+In /etc/yum/repos.d staan de files van de toegevoegde registries.
 
 
