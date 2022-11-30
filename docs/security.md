@@ -4,6 +4,11 @@
 
 <a href="https://github.com/ossf/wg-best-practices-os-developers/blob/main/docs/Concise-Guide-for-Developing-More-Secure-Software.md#readme">https://github.com/ossf/wg-best-practices-os-developers/blob/main/docs/Concise-Guide-for-Developing-More-Secure-Software.md#readme</a>
 
+nog wat guides:
+
+<a href="https://openssf.org/resources/guides/">https://openssf.org/resources/guides/</a>
+
+
 # Snyk code security analyse
 
 <a href="https://snyk.io/">Snyk.io</a> kan github repositories automatisch scannen op kwetsbaarheden in de code. Met het gratis account zijn er honderden scans per maand beschikbaar.
