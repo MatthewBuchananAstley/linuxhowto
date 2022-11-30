@@ -1,5 +1,8 @@
 # Security 
 
+# Guide for developing more secure software
+
+<a href="https://github.com/ossf/wg-best-practices-os-developers/blob/main/docs/Concise-Guide-for-Developing-More-Secure-Software.md#readme">https://github.com/ossf/wg-best-practices-os-developers/blob/main/docs/Concise-Guide-for-Developing-More-Secure-Software.md#readme</a>
 
 # Snyk code security analyse
 
