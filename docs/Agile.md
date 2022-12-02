@@ -20,7 +20,7 @@
 * Deliver working software frequently (weeks rather than months)
 * Close, daily cooperation between business people and developers
 * Projects are built around motivated individuals, who should be trusted
-* Face-to-face conversation is the best form of communication
+* Face-to-face conversation is the best form of communication (co-location)
 * Working software is the primary measure of progress
 * Sustainable development, able to maintain a constant pace
 * Continuous attention to technical eccelence and good design
