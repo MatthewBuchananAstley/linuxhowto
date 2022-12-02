@@ -9,6 +9,7 @@ nav:
         - docker.md
         - ansible.md
         - packagemanagement.md
+        - Agile.md
         - continuousintegration.md
         - debianpackages.md
         - debian10.md
