@@ -65,6 +65,14 @@ Een table veranderen kan met een ALTER instructie.
 
 # Een rij toevoegen
 
+    INSERT INTO tabelnaam (kolomnaam1, kolomnaam2) VALUES ('waarde1', 'waarde2') ;
+
+# Rij verwijderen
+
+    DELETE FROM tabelnaam WHERE id = 'id' ;
+
+# Een kolom toevoegen
+
     ALTER TABLE `users` ADD `ipaddress` VARCHAR(65) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER `cookiecode` ;
 
 # MariaDB password veranderen
