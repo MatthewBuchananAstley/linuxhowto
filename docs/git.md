@@ -36,9 +36,15 @@ Het git push commando is ook aan te roepen via een alias. Een commando alias is 
 
 toe te voegen aan .bashrc in de home directory. 
 
+# Lijst van veranderingen in een git repository genereren inclusief bestandsnaam
 
+Dat kan met het gitpresent.pl script:
 
+    #perl ./gitpresent.pl 
 
+    Tue Dec 13 11:42:31 2022 +0100 Removed commented out (#prepended lines) getting script to work attempt lines gitpresent.pl Matthew Buchanan Astley <matthewbuchanan@astley.nl>
+    Tue Dec 13 11:36:35 2022 +0100 Added gitpresent.pl script README.md Matthew Buchanan Astley <matthewbuchanan@astley.nl>
+    Tue Dec 13 11:35:15 2022 +0100 Added gitpresent.pl script to generate a listing of commits including filename for the actual day gitpresent.pl Matthew Buchanan Astley <matthewbuchanan@astley.nl>
+
+Het script genereert een lijstje van de veranderingen in een git repository op de huidige dag. Handig om bij te houden hoeveel er per dag verandert in git repositories.
     
-
-
