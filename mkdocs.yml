@@ -1,41 +1,8 @@
-site_name: My Docs
+site_name: Linuxhowto 
 nav:
     - Home:
         - index.md
-        - dual_boot_ubuntu_with_partial_disk_encryption.md
-        - commandline.md
-        - cryptsetup.md
-        - centos.md
-        - docker.md
-        - ansible.md
-        - packagemanagement.md
-        - Agile.md
-        - continuousintegration.md
-        - debianpackages.md
-        - debian10.md
-        - mongodb.md
-        - mysql.md   
-        - graphite.md
-        - apache.md
-        - clamav.md
-        - linux_kernel_compilation.md
-        - SSL_certificaten_installeren.md
-        - git.md
-        - ssh.md
-        - security.md
-        - spdx.md
-        - tijd.md
-        - Python.md
-        - Php.md
-        - Perl.md
-        - nodejs.md
-        - readthedocs.md
-        - virtualisatie.md
-        - virtualbox.md
-        - opendata.md
-        - geospatialdata.md
-        - computeruptime.md
-        - coc.md
+
 
     - About: about.md
 theme: readthedocs
