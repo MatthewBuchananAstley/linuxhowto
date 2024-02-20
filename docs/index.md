@@ -4,4 +4,4 @@ Lang elegant verhaal kort, er komt op een gegeven moment een tijd dat techneuten
 
 Documentatie verhuisd:
 
-<a href="https://astley.nl/linuxhowto"> Linux howto </a>
+<a href="https://linux.astley.nl"> Linux howto </a>
